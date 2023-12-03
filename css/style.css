@@ -125,6 +125,11 @@ button {
 
 /* FORM START */
 
+.form {
+    background: var(--clr-light-theme-01);
+    width: 100%;
+}
+
 .form__group {
 	background: var(--clr-light-theme-01);
 	border-radius: 6px;
