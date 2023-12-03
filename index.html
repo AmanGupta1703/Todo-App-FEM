@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png" />
+		<title>Frontend Mentor | Todo app</title>
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/dark.css" />
+		<script defer type="module" src="./js/script.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<!-- HEADER START -->
+			<header class="header">
+				<img
+					srcset="
+						./images/bg-mobile-light.jpg  300w,
+						./images/bg-desktop-light.jpg 900w
+					"
+					sizes="(max-width: 767px) 280px,
+           (min-width: 768px) 800px"
+					src="./images/bg-mobile-light.jpg"
+					alt="a mountain range with snow"
+					class="header__bg-image" />
+				<div class="header__text-content">
+					<h1 class="primary-header">todo</h1>
+					<div class="header__theme-toggle">
+						<img
+							src="./images/icon-sun.svg"
+							alt="a sun icon"
+							class="header__theme-toggle--icon header__theme-toggle--icon--hide header__theme-toggle--sun-icon"
+							data-theme="light" />
+						<img
+							src="./images/icon-moon.svg"
+							class="header__theme-toggle--icon header__theme-toggle--icon--show header__theme-toggle--moon-icon"
+							alt="a moon icon"
+							data-theme="dark" />
+					</div>
+				</div>
+			</header>
+			<!-- HEADER END -->
+
+			<!-- MAIN START -->
+			<main class="main">
+				<form class="form">
+					<div class="form__group">
+						<div class="circle"></div>
+						<input
+							type="text"
+							name="todo"
+							id="todo"
+							placeholder="Create a new todo..."
+							class="form__input" />
+					</div>
+				</form>
+				<section class="todo-section">
+					<ul class="todos todos--list"></ul>
+					<div class="todo-footer">
+						<div class="todo-footer__left">
+							<span class="todo-footer__left--count">
+								3 items left
+							</span>
+						</div>
+						<div class="todo-footer__right">
+							<button
+								class="btn btn--all active"
+								data-filter="all">
+								All
+							</button>
+							<button
+								class="btn btn--active"
+								data-filter="active">
+								Active
+							</button>
+							<button
+								class="btn btn--completed"
+								data-filter="completed">
+								Completed
+							</button>
+						</div>
+						<div class="todo-footer__clear">
+							<button class="btn btn--clear">
+								Clear Completed
+							</button>
+						</div>
+					</div>
+				</section>
+			</main>
+			<!-- MAIN END -->
+		</div>
+	</body>
+</html>
+
+<!--
+	<li class="todo__item">
+							<div class="circle circle--active">
+								<img
+									src="./images/icon-check.svg"
+									alt="check icon"
+									class="todo__img todo__img--check-icon" />
+							</div>
+							<span class="todo__name">
+								Complete Online Javascript Course.
+							</span>
+							<button class="btn btn--todo btn--delete">
+								<img
+									src="./images/icon-cross.svg"
+									alt="cross icon" />
+							</button>
+						</li>
+						<hr />
+						<li class="todo__item">
+							<div class="circle">
+								<img
+									src="./images/icon-check.svg"
+									alt="check icon"
+									class="todo__img todo__img--check-icon" />
+							</div>
+							<span class="todo__name">
+								Complete Online Javascript Course.
+							</span>
+							<button class="btn btn--todo btn--delete">
+								<img
+									src="./images/icon-cross.svg"
+									alt="cross icon" />
+							</button>
+						</li>
+						<hr />
+						<li class="todo__item">
+							<div class="circle">
+								<img
+									src="./images/icon-check.svg"
+									alt="check icon"
+									class="todo__img todo__img--check-icon" />
+							</div>
+							<span class="todo__name">
+								Complete Online Javascript Course.
+							</span>
+							<button class="btn btn--todo btn--delete">
+								<img
+									src="./images/icon-cross.svg"
+									alt="cross icon" />
+							</button>
+						</li>
+						<hr />
+-->

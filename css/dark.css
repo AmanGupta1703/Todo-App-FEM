@@ -1,0 +1,43 @@
+.dark-theme {
+	background-color: var(--clr-dark-theme-01);
+}
+
+.dark-theme .form__group {
+	background-color: var(--clr-dark-theme-02);
+}
+
+.dark-theme .circle--active + .todo__name {
+  color: var(--clr-dark-theme-06);
+}
+
+.dark-theme .form__input {
+	color: var(--clr-dark-theme-04);
+}
+
+.dark-theme .form__input::placeholder {
+	color: var(--clr-dark-theme-05);
+}
+
+.dark-theme .todo-section {
+	background-color: var(--clr-dark-theme-02);
+}
+
+.dark-theme .todo__name {
+	color: var(--clr-dark-theme-04);
+}
+
+.dark-theme hr {
+  background-color: var(--clr-dark-theme-06);
+  border: 0;
+  width: 100%;
+  height: 1px;
+}
+
+.dark-theme .todo-footer__right {
+	background-color: var(--clr-dark-theme-02);
+}
+
+.dark-theme .todo-footer__right .btn:hover,
+.dark-theme .btn--clear:hover {
+  color: var(--clr-dark-theme-04);
+}
