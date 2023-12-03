@@ -132,6 +132,7 @@ button {
 	align-items: center;
 	column-gap: 0.8rem;
 	padding: 1em;
+	width: 100%;
 }
 
 .circle {
